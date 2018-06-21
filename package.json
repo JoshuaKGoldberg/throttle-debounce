@@ -1,7 +1,7 @@
 {
-  "name": "throttle-debounce",
+  "name": "throttle-debounce-sway-fork",
   "version": "2.0.0",
-  "description": "Throttle and debounce functions.",
+  "description": "Throttle and debounce functions. Sway fork for pending features.",
   "main": "index.cjs.js",
   "module": "index.esm.js",
   "author": "Ivan Nikolić <niksy5@gmail.com> (http://ivannikolic.com)",
@@ -69,7 +69,7 @@
     "url": "git+https://github.com/niksy/throttle-debounce.git"
   },
   "bugs": {
-    "url": "https://github.com/niksy/throttle-debounce/issues"
+    "url": "https://github.com/joshuakgoldberg/throttle-debounce/issues"
   },
-  "homepage": "https://github.com/niksy/throttle-debounce#readme"
+  "homepage": "https://github.com/joshuakgoldberg/throttle-debounce#readme"
 }

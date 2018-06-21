@@ -1,17 +1,21 @@
 declare module 'throttle-debounce' {
-  type throttleFn = (
-    delay: number,
-    noTrailing: boolean,
-    callback?: Function,
-    debounceMode?: boolean
-  ) => Function;
+  interface ThrottleSettings {
+    debounceMode?: boolean;
+    getTimeout?: () => number;
+    scheduler?: Function;
+  }
 
-  type debounceFn = (
+  interface ThrottleFunction {
+    (delay: number, callback: Function, debounceMode?: boolean | ThrottleSettings): Function;
+    (delay: number, noTrailing: boolean, callback: Function, debounceMode?: boolean | ThrottleSettings): Function;
+  }
+
+  type DebounceFunction = (
     delay: number,
     atBegin: boolean,
     callback?: Function
   ) => Function;
 
-  const throttle: throttleFn;
-  const debounce: debounceFn;
+  const throttle: ThrottleFunction;
+  const debounce: DebounceFunction;
 }

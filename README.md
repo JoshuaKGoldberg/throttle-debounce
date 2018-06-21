@@ -2,6 +2,9 @@
 
 [![Build Status][ci-img]][ci] [![Mentioned in Awesome Micro npm Packages][awesome-img]][awesome]
 
+> This is a fork being used pending active pull requests against throttle-debounce.
+> Use the upstream repository if you don't need those specific features!
+
 Throttle and debounce functions.
 
 This module is the same as [jquery-throttle-debounce][jquery-throttle-debounce] ([with some differences](#differences-with-original-module)), but it’s transferred to ES Modules and CommonJS format.
