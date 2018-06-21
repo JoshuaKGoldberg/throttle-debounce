@@ -1,4 +1,4 @@
-declare module 'throttle-debounce' {
+declare module 'throttle-debounce-sway-fork' {
   interface ThrottleSettings {
     debounceMode?: boolean;
     getTimeout?: () => number;
