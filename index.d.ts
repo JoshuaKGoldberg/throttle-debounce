@@ -5,17 +5,19 @@ declare module 'throttle-debounce-sway-fork' {
     scheduler?: Function;
   }
 
-  interface ThrottleFunction {
-    (delay: number, callback: Function, debounceMode?: boolean | ThrottleSettings): Function;
-    (delay: number, noTrailing: boolean, callback: Function, debounceMode?: boolean | ThrottleSettings): Function;
+  interface Throttle {
+    (delay: number, callback: Function, debounceMode?: boolean | ThrottleSettings): ThrottleFunction;
+    (delay: number, noTrailing: boolean, callback: Function, debounceMode?: boolean | ThrottleSettings): ThrottleFunction;
   }
 
-  type DebounceFunction = (
+  type ThrottleFunction = () => void;
+
+  type Debounce = (
     delay: number,
     atBegin: boolean,
     callback?: Function
   ) => Function;
 
-  const throttle: ThrottleFunction;
-  const debounce: DebounceFunction;
+  const throttle: Throttle;
+  const debounce: Debounce;
 }

@@ -1,6 +1,6 @@
 {
   "name": "throttle-debounce-sway-fork",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Throttle and debounce functions. Sway fork for pending features.",
   "main": "index.cjs.js",
   "module": "index.esm.js",
